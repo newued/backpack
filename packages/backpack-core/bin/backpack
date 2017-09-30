@@ -1,8 +1,9 @@
 #!/usr/bin/env node
+//此文件主要是获取命令行命令和参数
 const path = require('path')
 const spawn = require('cross-spawn')
 const pkg = require('../package.json')
-
+//设置默认指令
 const defaultCommand = 'dev'
 const commands = new Set([
   'init',
